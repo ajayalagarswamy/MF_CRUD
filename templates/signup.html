@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="row">
+    <div class="col-8 mx-Auto">
+        <h2>signup</h2>
+        <hr>
+        <form action="{{url_for('signup')}}" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" id="name" required=1 placeholder="Enter your name" class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" name="password" id="password" required=1 placeholder="Enter your password"
+                    class="form-control">
+            </div>
+            <br>
+            <input type="Submit" value="signin" class="btn btn-primary form-control"><br>
+
+
+
+
+
+
+    </div>
+    </form>
+</div>
+</div>
+
+{% endblock body %}

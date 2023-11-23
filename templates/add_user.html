@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="row">
+    <div class="col-8 mx-Auto">
+        <h2>Add User</h2>
+        <hr>
+        <form action="{{url_for('add_user')}}" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" id="name" required=1 placeholder="Enter your name" class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="number" name="fund_house1" id="fund_house1" required=1
+                    placeholder="Enter your mutual fund code" class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="number" name="invested_amount" id="invested_amount" required=1
+                    placeholder=" Enter your mutual fund invested amount" class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="number" name="unit_held" id="unit_held" required=1 placeholder="Enter the unitheld"
+                    class="form-control">
+            </div>
+            <br>
+            <input type="Submit" value="Add User" class="btn btn-primary form-control">
+
+
+    </div>
+    </form>
+</div>
+</div>
+
+{% endblock body %}

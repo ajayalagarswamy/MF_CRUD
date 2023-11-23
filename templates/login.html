@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="row">
+    <div class="col-8 mx-Auto">
+        <h2>login user</h2>
+        <hr>
+        <form action="{{url_for('login')}}" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" id="name" required=1 placeholder="Enter your name" class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" name="password" id="password" required=1 placeholder="Enter your password"
+                    class="form-control">
+            </div>
+            <br>
+            <input type="Submit" value="login" class="btn btn-primary form-control"><br><br>
+
+            <p>Don't have a account ? <a href="{{url_for('signup')}}" class="btn btn-success">signup </a></p>
+
+
+
+
+
+
+    </div>
+    </form>
+</div>
+</div>
+
+{% endblock body %}
